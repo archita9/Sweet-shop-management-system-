@@ -1,91 +1,80 @@
-# 🍬 Sweet Shop Management System (Python + TDD)
+# 🍬 Sweet Shop Management System
 
-This is a **console-based Sweet Shop Management System** built with Python. It helps manage sweets inventory through a menu-driven interface. The project follows the **Test-Driven Development (TDD)** approach and includes automated unit tests using `pytest`.
+*A Python console application built using Test-Driven Development (TDD)*
 
----
-
-## ✅ Features
-
-- Add new sweets with validation
-- View all sweets in inventory
-- Delete sweets by name
-- Sort sweets by name, category, price, or quantity
-- Search sweets by:
-  - Name
-  - Category
-  - Price range
-- Purchase sweets (stock decreases)
-- Restock sweets (stock increases)
+The **Sweet Shop Management System** is a menu-driven Python application that helps manage sweets, track stock, search items, sort inventory, and process purchases.
+This project is structured using a **Test-Driven Development (TDD)** workflow and includes a full suite of automated tests using **pytest**.
 
 ---
 
-## 🗂️ Project Folder Structure
+## 🌟 Key Features
+
+✔ **Add new sweets** with input validation
+✔ **Delete sweets** by name
+✔ **View complete inventory**
+✔ **Sort sweets** by:
+
+* Name
+* Category
+* Price
+* Quantity
+  ✔ **Search sweets** by:
+* Name
+* Category
+* Price Range
+  ✔ **Purchase sweets** (automatically decreases stock)
+  ✔ **Restock sweets**
+  ✔ **Fully tested code** following TDD principles
+
+---
+
+## 📁 Project Structure
 
 ```
-Sweet_Shop/
-├── main.py                  # Main menu-driven interface
-├── sweet/                  
-│   ├── __init__.py          # Package initializer
-│   └── Classes_logics.py    # Business logic class (SweetShop)
-├── tests/                  
-│   └── test_sweet_shop.py   # Pytest test cases
-├── test-report.txt          # Pytest output report (optional)
-└── README.md                # Project documentation
+Sweet_Shop_Management_System/
+│
+├── main.py                    # Entry point – menu-driven console UI
+│
+├── sweet/
+│   ├── __init__.py
+│   └── Classes_logics.py      # Core business logic (SweetShop class)
+│
+├── tests/
+│   └── test_sweet_shop.py     # Pytest test cases based on TDD
+│
+├── test-report.txt            # Auto-generated pytest report
+│
+└── README.md                  # Project documentation
 ```
-
 
 ---
 
 ## 🛠️ Technologies Used
 
-- **Python 3.10+**
-- **Pytest** for unit testing
-- **VS Code** (Recommended IDE)
-- **TDD approach** for robust design
+* **Python 3.x**
+* **Pytest** for automated testing
+* **OOP** (Object-Oriented Programming)
+* **TDD (Test-Driven Development)**
+* Developed in **VS Code**
 
 ---
 
-## 🚀 How to Run
+## 🚀 Getting Started
 
-1. **Clone the repo:**
+### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/sweet-shop.git
-cd Sweet_Shop
+git clone https://github.com/your-username/Sweet_Shop_Management_System.git
+cd Sweet_Shop_Management_System
 ```
 
-2. **Run the main app:**
+### 2️⃣ Run the application
 
 ```bash
 python main.py
 ```
 
-3. Follow the on-screen menu to interact with the system.
-
----
-
-## 🧪 Run Tests (with Pytest)
-
-> Make sure pytest is installed:
-
-```bash
-pip install pytest
-```
-
-> Run tests and save report:
-
-```bash
-pytest tests/ > test-report.txt
-```
-
-> Optional: View `test-report.txt` in **UTF-8 format** to avoid garbage characters (`��=`).
-
-In VS Code:
-- Click `File → Reopen with Encoding → UTF-8`
-
----
-
-## 📸 Example Use
+You will see a console menu like:
 
 ```
 ====== SWEET SHOP MANAGEMENT SYSTEM ======
@@ -101,15 +90,54 @@ In VS Code:
 
 ---
 
-## 👤 Author
+## 🧪 Running Tests (TDD)
 
-- **Archita [Archita Goyal]**
-- GitHub: [https://github.com/archita9]
+### Install pytest
+
+```bash
+pip install pytest
+```
+
+### Run test suite
+
+```bash
+pytest
+```
+
+### Export test output to file
+
+```bash
+pytest > test-report.txt
+```
+
+If `test-report.txt` shows weird characters, open it in VS Code using:
+
+**File → Reopen with Encoding → UTF-8**
 
 ---
 
-## 📝 License
+## 🖼️ Sample Operations
 
-This project is open-source and free to use.
+```
+Enter choice: 1
+Enter Sweet Name: Rasgulla
+Enter Category: Milk
+Enter Price: 20
+Enter Quantity: 50
+Sweet added successfully!
+```
+
+Each action is validated and processed using methods inside the *SweetShop* class.
+
+---
+
+## 👩‍💻 Author
+
+**Archita Goyal**
+🔗 GitHub: [https://github.com/archita9](https://github.com/archita9)
+
+---
+
+
 
 
